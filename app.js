@@ -1,7 +1,31 @@
+
+
 function m1() {
-  const input = +document.getElementById("inputValue").value;
+  const n = + document.getElementById("inputValue").value;
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    if (i % 2 === 0) {
+      sum -= 1 / i;
+    } else {
+      sum += 1 / i;
+    }
+  }
+  document.getElementById("output").innerHTML = `Yig'indi: ${sum}`;
 }
 
+
+
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Computes the sum of the first n factorials.
+ *
+ * @see https://en.wikipedia.org/wiki/Factorial
+ *
+ * @param {number} n - The number of factorials to compute.
+ *
+ * @returns {number} The sum of the first n factorials.
+ */
+/******  84387f9a-2851-4796-9634-430a82be7ab5  *******/
 function m2() {
   const n = +document.getElementById("inputValue2-1").value;
   let sum = 0;
@@ -38,10 +62,6 @@ function m4() {
   ).innerHTML = `Kvadrati ${n} dan katta bo'lgan eng kichik k soni: ${k}`;
 }
 
-
-
-
-
 function m5() {
   const n = +document.getElementById("inputValue5-1").value;
   let count = 0;
@@ -52,10 +72,6 @@ function m5() {
     "output5"
   ).innerHTML = `${n} gacha bo'lgan toq sonlar soni: ${count} ta`;
 }
-
-
-
-
 
 // SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
