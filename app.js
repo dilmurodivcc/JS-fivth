@@ -14,51 +14,36 @@ function m2() {
 
   document.getElementById("output2").innerHTML = `Faktoriyalar soni: ${sum}`;
 }
-function m4() {
-  const input41 = +document.getElementById("inputValue4").value;
-  const input42 = +document.getElementById("inputValue4-2").value;
-  const input43 = +document.getElementById("inputValue4-3").value;
-  let disB = Math.abs(input41 - input42);
-  let disC = Math.abs(input43 - input43);
-  if (disB <= disC) {
-    document.getElementById("output4").innerHTML = `B nuqta eng yaqini.`;
-  } else if (disB >= disC) {
-    document.getElementById("output4").innerHTML = `C nuqta eng yaqini.`;
-  } else {
-    document.getElementById(
-      "output4"
-    ).innerHTML = `B va C nuqta yaqinligi birxil.`;
-  }
-}
 
-function m5() {
-  const x1 = +document.getElementById("inputValue5-1").value;
-  const y1 = +document.getElementById("inputValue5-2").value;
-  const x2 = +document.getElementById("inputValue5-3").value;
-  const y2 = +document.getElementById("inputValue5-4").value;
-  const x3 = +document.getElementById("inputValue5-5").value;
-  const y3 = +document.getElementById("inputValue5-6").value;
-  let x4;
-  let y4;
-  if (x1 === x2) {
-    x4 = x3;
-  } else if (x1 === x3) {
-    x4 = x2;
-  } else {
-    x4 = x1;
-  }
-  if (y1 === y2) {
-    y4 = y3;
-  } else if (y1 === y3) {
-    y4 = y2;
-  } else {
-    y4 = y1;
+function m3() {
+  const n = +document.getElementById("inputValue33").value;
+  let k = 0;
+  while ((k + 1) ** 2 <= n) {
+    k++;
   }
   document.getElementById(
-    "output5"
-  ).innerHTML = `To'rtinchi nuqta: (${x4}, ${y4})`;
-  console.log({ x4, y4 });
+    "output3"
+  ).innerHTML = `Kvadrati ${n} dan katta bo'lmagan eng katta k soni: ${k}`;
 }
+
+
+
+
+function m4() {
+  const n = +document.getElementById("inputValue4").value;
+  let k = 1;
+
+  while (k ** 2 <= n) {
+    k++;
+  }
+  document.getElementById(
+    "output4"
+  ).innerHTML = `Kvadrati ${n} dan katta bo'lgan eng kichik k soni: ${k}`;
+}
+
+
+
+
 
 function m6() {
   const input_61 = +document.getElementById("inputValue6_1").value;
