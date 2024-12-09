@@ -26,9 +26,6 @@ function m3() {
   ).innerHTML = `Kvadrati ${n} dan katta bo'lmagan eng katta k soni: ${k}`;
 }
 
-
-
-
 function m4() {
   const n = +document.getElementById("inputValue4").value;
   let k = 1;
@@ -45,81 +42,20 @@ function m4() {
 
 
 
-function m6() {
-  const input_61 = +document.getElementById("inputValue6_1").value;
-  const input_62 = +document.getElementById("inputValue6_2").value;
-  const amal = +document.getElementById("inputValue6_3").value;
-  switch (amal) {
-    case 1:
-      document.getElementById("output6").innerHTML = `A + B = ${
-        input_61 + input_62
-      }`;
-      break;
-    case 2:
-      document.getElementById("output6").innerHTML = `A - B = ${
-        input_61 - input_62
-      }`;
-      break;
-    case 3:
-      document.getElementById("output6").innerHTML = `A / B = ${
-        input_61 / input_62
-      }`;
-      break;
-    case 4:
-      document.getElementById("output6").innerHTML = `A * B = ${
-        input_61 * input_62
-      }`;
-      break;
-    default:
-      document.getElementById(
-        "output6"
-      ).innerHTML = `Bunday amal mavjud emas !`;
-  }
-}
-
-function m7() {
-  const input_71 = +document.getElementById("inputValue7_1").value;
-  const value = +document.getElementById("inputValue7_2").value;
-  const p = 3.14;
-  let R;
-  let D;
-  let U;
-  let S;
-  switch (input_71) {
-    case 1:
-      R = value;
-      D = 2 * R;
-      U = 2 * p * R;
-      S = p * R * R;
-      break;
-    case 2:
-      D = value;
-      R = D / 2;
-      U = 2 * p * R;
-      S = p * R * R;
-      break;
-    case 3:
-      U = value;
-      R = L / (2 * p);
-      D = 2 * R;
-      S = p * R * R;
-      break;
-    case 4:
-      S = value;
-      R = Math.sqrt(S / p);
-      D = 2 * R;
-      U = 2 * p * R;
-      break;
-    default:
-      document.getElementById(
-        "output7"
-      ).innerHTML = `Bunday amal mavjud emas !`;
-      return;
+function m5() {
+  const n = +document.getElementById("inputValue5-1").value;
+  let count = 0;
+  for (let i = 1; i <= n; i += 2) {
+    count++;
   }
   document.getElementById(
-    "output7"
-  ).innerHTML = `Radius = ${R}, Diametr = ${D}, Uzunlik = ${U}, Doiraning uzasi = ${S}`;
+    "output5"
+  ).innerHTML = `${n} gacha bo'lgan toq sonlar soni: ${count} ta`;
 }
+
+
+
+
 
 // SOME FUNCTION -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
